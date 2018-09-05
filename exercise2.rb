@@ -7,3 +7,4 @@ def negative(my_number)
 end
 
 puts negative(2)
+puts negative(-3)
