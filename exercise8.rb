@@ -11,8 +11,8 @@ def gettime(person, distance)
 end
 
 def speed(distance, min)
-    second = min * 60
-    return distance/second
+    seconds = min * 60
+    return distance/seconds
 end
 
 person1= "nicolas"
@@ -24,9 +24,9 @@ distance3 = getdistance(person3).to_i
 min1 = gettime(person1, distance1).to_i
 min2 = gettime(person2, distance2).to_i
 min3 = gettime(person3, distance3).to_i
-speed1 = speed(distance1,min1)
-speed2 = speed(distance2,min2)
-speed3 = speed(distance3,min3)
+speed1 = speed(distance1,min1).to_f
+speed2 = speed(distance2,min2).to_f
+speed3 = speed(distance3,min3).to_f
 
 if speed3 > speed2 && speed3 > speed1
   puts "#{person3} was the fastest at #{speed3} m/s"
